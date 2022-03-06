@@ -1,4 +1,4 @@
-Node starting+point(Node head)
+Node startingpoint(Node head)
 {
 
 Node low=head;
