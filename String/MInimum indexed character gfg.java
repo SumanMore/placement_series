@@ -1,4 +1,10 @@
-HashSet<Character> set=new HashSet<>();
+class Solution
+{
+    //Function to find the minimum indexed character.
+    public static int minIndexChar(String str, String patt)
+    {
+        // Your code here
+        HashSet<Character> set=new HashSet<>();
         for(int i=0; i<patt.length(); i++)
         {
             set.add(patt.charAt(i));
@@ -9,3 +15,5 @@ HashSet<Character> set=new HashSet<>();
             return i;
         }
        return -1; 
+    }
+}
