@@ -9,3 +9,19 @@ int fib(int n)
   }
   return a[n];
 }
+
+gfg solution
+class Solution {
+    static long nthFibonacci(long n){
+        // code here
+        long mod = 1000000007;
+       long a=0, b=1,c,i;
+       for (i=2;i<=n;i++){
+           c=(a+b)%mod;
+           a=b;
+           b=c;
+           
+       }
+       return b;
+    }
+}
