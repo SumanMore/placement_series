@@ -18,7 +18,7 @@ public class Main
 	public static void main(String[] args) 
 	{
 	 int count=0;
-	 int n=2;
+	 int n=2;// any number take as input.. this is just an example
 	 while(n!=0)
 	 {
 	     count++;
