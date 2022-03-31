@@ -19,3 +19,26 @@ class Solution
         return ans;
     }
 }
+
+
+
+or
+
+
+long long countTriplets(long long arr[], int n, long long sum)
+	{
+	    // Your code goes here
+	     int counter=0;
+	    sort(arr,arr+n);
+	   for(int k=0;k<n-2;k++){
+	       int i=k+1;
+	       int j=n-1;
+	       while(i<j){
+	           int temp_sum=arr[k]+arr[j]+arr[i];
+	           if(temp_sum<sum){
+	               counter+=(j-i);
+	               i++;
+	           }else j--;
+	       }
+	   }
+	   return counter;
