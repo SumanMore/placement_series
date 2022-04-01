@@ -17,3 +17,11 @@ class Solution
        return -1; 
     }
 }
+
+
+ for(int i=0; i<S.length();i++) {
+	if(patt.contains(Character.toString(S.charAt(i)))) {
+		return Character.toString(S.charAt(i));
+	}
+}
+return "$";
